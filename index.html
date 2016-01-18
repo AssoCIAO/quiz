@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Quiz design for CIAO</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+
+    	<div class="container">
+<label>Texte</label>
+        <input type="button" name="nom" value="Bouton">
+        <input type="image" src="image/bimage.jpg">
+<input type="text" name="texte" value="rien">
+<input type="password" name="monpass" value="12345">
+<input type="date" name="d" value="<?php echo $today?>">
+<input type="datetime" name="dt" value="<?php echo $now?>">
+<time>2013-06-27</time>
+<input type="number" name="nombre" value="12345">
+<input type="color" name="couleur" value="">
+<input type="search" name="" list="datalist" value="">
+<data value="10">Dix</data>
+<label>Choix 1
+<input type="radio" name="radio1" value="radio1">
+</label>
+<label>Choix 2
+<input type="radio" name="radio1" value="radio2">
+</label>
+
+<textarea name="textarea">contenu</textarea>
+
+	
+<input type="range" min="-100" max="100" value="0" step="2" name="power" list="powers">
+<datalist id="powers">
+<option value="0">
+<option value="-30">
+<option value="30">
+<option value="+50">
+</datalist>
+
+<datalist id="identifieur">
+<option value="1">
+<option value="2">
+<option value="3">
+</datalist>
+<select name="select">
+<option>Alpha</option>
+<option>Beta</option>
+<option>Delta</option>
+</select>
+<select name="select2" size="3">
+<option>Alpha</option>
+<option>Beta</option>
+<option>Delta</option>
+</select>
+
+<menu type="context">
+<li>Nouveau</li>
+<li>Ouvrir</li>
+<li>Sauver</li>
+</menu>
+<menu type="toolbar">
+<li><button type="button" onclick="fnew()">Nouveau</button></li>
+<li><button type="button" onclick="fopen()">Ouvrir</button></li>
+<li><button type="button" onclick="fsave()">Sauver</button></li>
+</menu>
+
+<input type="text" list="comboid">
+<datalist id="comboid">
+<option value="0">
+<option value="-30">
+<option value="30">
+<option value="+50">
+</datalist>
+
+<input type="file" name="file">
+
+
+<figure>
+<img src="image/image.gif">
+<figcaption>Caption</figcaption>
+</figure>
+
+<fieldset> <legend>Titre </legend> 
+<p>Contenu</p>
+</fieldset>
+
+<output onforminput="value = 2 + 2"></output>
+
+<meter min=0 max=24 value=12>12 units</meter>
+
+<progress id="prog" max=100>
+
+<details>
+<summary> Présentation </summary>
+<dl>
+<dt>terme</dt>
+<dd>définition</dd>
+... 
+</dl>
+</details>
+
+	
+<input type="submit" name="envoi" value="Envoyer">
+</div>
+        
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
