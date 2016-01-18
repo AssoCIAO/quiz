@@ -5,19 +5,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>Quiz design for CIAO</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link href="libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="files/css/style.css">
         <link rel="author" href="humans.txt">
     </head>
     <body>
 
     	<div class="container">
+
+    		Test bootstrap
+    	</div>
 <label>Texte</label>
         <input type="button" name="nom" value="Bouton">
         <input type="image" src="image/bimage.jpg">
 <input type="text" name="texte" value="rien">
 <input type="password" name="monpass" value="12345">
 <input type="date" name="d" value="<?php echo $today?>">
-<input type="datetime" name="dt" value="<?php echo $now?>">
+<input type="datetime" name="dt" value="<?php echo 'Wesh'?>">
 <time>2013-06-27</time>
 <input type="number" name="nombre" value="12345">
 <input type="color" name="couleur" value="">
@@ -107,7 +111,8 @@
 <input type="submit" name="envoi" value="Envoyer">
 </div>
         
-
-        <script src="js/main.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+        <script src="files/js/main.js"></script>
     </body>
 </html>
